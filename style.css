@@ -391,6 +391,7 @@ button:focus {
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
+	
 
 }
 
@@ -3715,7 +3716,7 @@ section{
 		top: 40%;
 		right:2%;
 		left:2%; 
-		
+
 
 }
 .herotext h1{
@@ -3731,7 +3732,8 @@ section{
 	 /* text-shadow: 8px 8px 12px #ff2a2d;*/
 	  text-align: center;
 	  font-weight: bold;
-	  letter-spacing: 8px;
+	  letter-spacing: 10px;
+	  filter: drop-shadow(16px 16px 20px #ff2a2d);
 	  
 
 
@@ -3743,10 +3745,11 @@ section{
 	  font-family: 'comfortaaregular',sans-serif;
       color:#7fff00;
 	  /*text-shadow: 8px 8px 12px #f0f0f0 ;*/
-	  text-shadow: 3px 3px 20px #00ffff ,
-    -2px 1px 30px #301934;
+	  text-shadow: 3px 3px 20px #000080 ,
+    -2px 1px 30px #00ced1;
 	  text-align: center;
 	  font-weight: bold;
+	  filter: drop-shadow(16px 16px 20px #000080);
 
 
     /* } */
