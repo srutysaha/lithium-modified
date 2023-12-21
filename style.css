@@ -24,7 +24,9 @@ body {
 	color: #1c1b1b;
 }
 
-
+.mu-event-time h3{
+	font-family: 'comfortaaregular',sans-serif;
+}
 
 ul {
 	padding: 0;
@@ -1367,12 +1369,17 @@ fo
 	padding: 30px 0;
 	text-align: center;
 	width: 100%;
+	font-family: 'comfortaaregular',sans-serif;
 }
 
 .mu-footer-top {
 	display: inline;
 	float: left;
 	width: 100%;
+}
+.mu-footer-top h1{
+	font-family: 'lemonmilkregular',sans-serif;
+	padding:2% 0%;
 }
 
 .mu-social-media {
@@ -1383,8 +1390,8 @@ fo
 }
 
 .mu-social-media a {
-	border: 1px solid #19191a;
-	border-radius: 50px;
+	border: 2px solid #19191a;
+	border-radius:50px;
 	color: #19191a;
 	display: inline-block;
 	font-size: 12px;
@@ -1392,16 +1399,20 @@ fo
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.2s ease-in-out 0s;
-	width: 35px;
-	height: 35px;
-	line-height: 35px;
-	font-size: 15px;
+	width: 130px;
+	height: 50px;
+	line-height: 51px;
+	font-size: 36px;
 }
 
 .mu-footer-bottom {
 	display: inline;
 	float: left;
 	width: 100%;
+}
+.mu-footer-bottom h1{
+	font-family: 'lemonmilkregular',sans-serif;
+	padding:3% 0%;
 }
 
 .mu-copy-right {
@@ -3665,7 +3676,7 @@ section{
     margin: 0 10px;
     text-decoration: none;
     color: #333;
-	font-size: 3rem;
+	font-size:3rem;
 }
 
 /* Style the name and profession */
@@ -3683,7 +3694,7 @@ section{
 .name-profession .profession {
     display: block;
     font-size: 1.5em;
-    color: #666;
+	color:#666;
 }
 
 /* Style the navigation arrows */
@@ -3715,36 +3726,61 @@ section{
 
 .herotext{
 	    position: absolute;
-    	z-index: 2;
-		top: 40%;
-		right:2%;
-		left:2%; 
-
+    	z-index: 5;
+		top: 35%;
+		right:0%;
+		left:0%; 
+		background-image: url(assets/images/aether_background.png);
+		background-size:cover;
+		box-shadow:12px 0px 8px 10px #000;
 
 }
+
 .herotext h1{
       /* background: linear-gradient(45deg, #0754fb, #847474); */
 	  font-family: 'lemonmilkregular', sans-serif;
-      -webkit-background-clip: text;
-      /* color: transparent; */
-	  color: #f0f0f0 ;
+	  background-clip: text;
+	  -webkit-background-clip: text;
+	  /* color: #f0f0f0 ;  */
       font-size: 6em;
       margin: 20px 0;
-	  text-shadow: 3px 3px 20px #ff2a2d,
-    -2px 1px 30px #ff99cc;
+	  /* text-shadow: 3px 3px 20px #ff2a2d,
+    -2px 1px 30px #ff99cc; */
 	 /* text-shadow: 8px 8px 12px #ff2a2d;*/
 	  text-align: center;
-	  font-weight: bold;
+	  font-weight:bold;
 	  letter-spacing: 10px;
-	  filter: drop-shadow(16px 16px 20px #ff2a2d);
-	  
+	  filter: drop-shadow(16px 16px 20px #fff); 
+	  -webkit-animation: glow 1s ease-in-out infinite alternate;
+	  -moz-animation: glow 1s ease-in-out infinite alternate;
+	  animation: glow 1s ease-in-out infinite alternate;
+  
 
 
 }
+:root{
+	--reda:#ff0000;
+	--redb:#e60026;
+	--redc:#ff0800;
+	--oa:#ff4500;
+	--ob:#fd5800;
+	--oc:#fe5a1d;
+}
+@-webkit-keyframes glow {
+	from {
+	  /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; */
+	  text-shadow: 0 0 5px #ff8c00, 0 0 30px var(--reda), 0 0 60px var(--redb), 0 0 70px var(--redc);
+	}
+	to {
+	  /* text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; */
+	  text-shadow: 0 0 10px #ff8c00, 0 0 40px var(--oa), 0 0 70px var(--ob), 0 0 80px var(--oc);
+	}
+  }
+  
 
 .herotext p{
 	/* p { */
-      font-size: 3em;
+      font-size: 2em;
 	  font-family: 'comfortaaregular',sans-serif;
       color:#7fff00;
 	  /*text-shadow: 8px 8px 12px #f0f0f0 ;*/
