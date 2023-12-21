@@ -3735,7 +3735,14 @@ section{
 		box-shadow:12px 0px 8px 10px #000;
 
 }
-
+:root{
+	--reda:#ff0000;
+	--redb:#e60026;
+	--redc:#ff0800;
+	--oa:#ff4500;
+	--ob:#fd5800;
+	--oc:#fe5a1d;
+}
 .herotext h1{
       /* background: linear-gradient(45deg, #0754fb, #847474); */
 	  font-family: 'lemonmilkregular', sans-serif;
@@ -3750,22 +3757,12 @@ section{
 	  text-align: center;
 	  font-weight:bold;
 	  letter-spacing: 10px;
-	  filter: drop-shadow(16px 16px 20px #fff); 
-	  -webkit-animation: glow 1s ease-in-out infinite alternate;
-	  -moz-animation: glow 1s ease-in-out infinite alternate;
-	  animation: glow 1s ease-in-out infinite alternate;
-  
-
+	  filter: drop-shadow(#000 5px 2px 0px);
+	  /* text-shadow: 0 0 10px #ff8c00, 0 0 40px var(--oa), 0 0 70px var(--ob), 0 0 80px var(--oc); */
+	  text-shadow: 0 0 18px #ff2a2d, 0 0 12px var(--reda), 0 0 23px var(--redb), 0 0 0px var(--redc);
 
 }
-:root{
-	--reda:#ff0000;
-	--redb:#e60026;
-	--redc:#ff0800;
-	--oa:#ff4500;
-	--ob:#fd5800;
-	--oc:#fe5a1d;
-}
+
 @-webkit-keyframes glow {
 	from {
 	  /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; */

@@ -38,6 +38,7 @@ Author URI : http://www.markups.io/
 .mu-navbar .mu-menu li a:focus,
 .mu-single-event .mu-event-time {
 	color: #ff0000;
+	font-family: 'lemonmilkregular',sans-serif;
 }
 
 .mu-speakers-slider .slick-next,
@@ -60,7 +61,7 @@ Author URI : http://www.markups.io/
 
 .mu-social-media a:hover,
 .mu-social-media a:focus {
-	border: 1px solid #ff0000;
+	border: 2px solid #ff0000;
 	color: #ff0000;
 }
 
